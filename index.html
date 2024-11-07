@@ -385,8 +385,9 @@ plot.</p>
 </div>
 <div id="this-is-where-i-try-to-create-html-from-.rmd" class="section level1">
 <h1>This is where I try to create html from .Rmd</h1>
-<div id="i-am-not-able-to-plot-a-graph-yet-but-i-will" class="section level2">
-<h2>I am not able to plot a graph yet, but I will</h2>
+<div id="i-am-not-able-to-plot-a-graph-yet-but-i-will-show-how-i-can-create-a-data-frame-based-on-my-current-uni-activities." class="section level2">
+<h2>I am not able to plot a graph yet, but I will show how I can create
+a data frame based on my current uni activities.</h2>
 <pre class="r"><code>breakfast &lt;- c(&#39;sauted green beans&#39;, &#39;bread&#39;, &#39;fried chicken&#39;, &#39;pasta&#39;, &#39;granola&#39;) #what I eat before class
 am_mins &lt;- c(0,15,0,10,12) #how long does it take for me to walk to the lecture classes. &#39;0&#39; means I did not have class on that day
 days &lt;- c(&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;) 
@@ -398,6 +399,33 @@ icha_unidays</code></pre>
 ## Wed      fried chicken       0
 ## Thu              pasta      10
 ## Fri            granola      12</code></pre>
+</div>
+<div id="i-also-want-to-show-how-i-do-my-homework-from-one-of-the-r-online-resources-in-the-mash-website." class="section level2">
+<h2>I also want to show how I do my homework from one of the R online
+resources in the MASH website.</h2>
+<pre class="r"><code>a &lt;- sample(0:10,5,replace=TRUE)
+b &lt;- sample(0:10,5,replace=TRUE)
+c &lt;- sample(0:10,5,replace=TRUE)
+a</code></pre>
+<pre><code>## [1] 6 0 6 4 0</code></pre>
+<pre class="r"><code>b</code></pre>
+<pre><code>## [1] 4 7 5 8 6</code></pre>
+<pre class="r"><code>c</code></pre>
+<pre><code>## [1] 5 9 4 4 8</code></pre>
+<pre class="r"><code>mat_com_row &lt;- rbind(a,b,c)
+mat_com_row</code></pre>
+<pre><code>##   [,1] [,2] [,3] [,4] [,5]
+## a    6    0    6    4    0
+## b    4    7    5    8    6
+## c    5    9    4    4    8</code></pre>
+<pre class="r"><code>mat_com_col &lt;- cbind(a,b,c)
+mat_com_col</code></pre>
+<pre><code>##      a b c
+## [1,] 6 4 5
+## [2,] 0 7 9
+## [3,] 6 5 4
+## [4,] 4 8 4
+## [5,] 0 6 8</code></pre>
 </div>
 </div>
 
