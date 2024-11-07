@@ -1,0 +1,46 @@
+---
+title: "Testing Rmarkdown"
+author: "Atniraiza G"
+date: "2024-11-07"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+# This is where I try to create html from .Rmd
+
+## I am not able to plot a graph yet, but I will
+
+```{r}
+breakfast <- c('sauted green beans', 'bread', 'fried chicken', 'pasta', 'granola') #what I eat before class
+am_mins <- c(0,15,0,10,12) #how long does it take for me to walk to the lecture classes. '0' means I did not have class on that day
+days <- c('Mon', 'Tue', 'Wed', 'Thu', 'Fri') 
+icha_unidays <- data.frame(breakfast, am_mins, row.names=days)
+icha_unidays
+```
+
